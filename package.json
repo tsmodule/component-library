@@ -1,0 +1,56 @@
+{
+  "name": "next-component-library",
+  "platform": "browser",
+  "version": "0.0.1",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "style": "dist/styles.css",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./styles": "./dist/styles/index.css",
+    "./styles/*": "./dist/styles/*/index.css",
+    "./package.json": "./package.json",
+    "./*": "./dist/components/*/index.js"
+  },
+  "scripts": {
+    "export": "tsmodule build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --fix",
+    "test": "ava",
+    "prepublishOnly": "yarn build && yarn test"
+  },
+  "ava": {
+    "timout": 240000,
+    "files": [
+      "test/**/*.test.ts"
+    ],
+    "extensions": {
+      "ts": "module"
+    },
+    "nodeArguments": [
+      "--no-warnings",
+      "--loader=@tsmodule/tsmodule"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@tsmodule/tsmodule": "^28.0.0",
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.11.0",
+    "eslint-config-next": "^12.1.0",
+    "next": "^12.1.0",
+    "postcss": "^8.4.8",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^3.0.23"
+  }
+}
