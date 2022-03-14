@@ -1,5 +1,6 @@
 {
-  "name": "next-component-library",
+  "name": "tsmodule-component-library",
+  "description": "A React component library built with tsmodule and Next.js.",
   "platform": "browser",
   "version": "0.0.1",
   "license": "MIT",
