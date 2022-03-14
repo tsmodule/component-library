@@ -117,38 +117,38 @@ p {
 /* FLEX */
 
 /**
-  * A container that expands to fill its parent.
-  */
+ * A container that expands to fill its parent.
+ */
 .expanded {
   @apply h-full w-full;
 }
 /**
-  * A flex container that is filled by its content.
-  */
+ * A flex container that is filled by its content.
+ */
 .filled {
   @apply flex flex-1 items-stretch;
 }
 /**
-  * A pure-flex container will be display: flex.
-  */
+ * A pure-flex container will be display: flex.
+ */
 .pure-flex {
   @apply flex;
 }
 /**
-  * And its immediate children will have zero padding and margin.
-  */
+ * And its immediate children will have zero padding and margin.
+ */
 .pure-flex > * {
   @apply m-0 p-0;
 }
-/*
-  * A flex container centered along both axes.
-  */
+/**
+ * A flex container centered along both axes.
+ */
 .flex-center {
   @apply flex justify-center items-center;
 }
 /**
-  * Center flex and text.
-  */
+ * Center flex and text.
+ */
 .center {
   @apply flex-center text-center;
 }
@@ -160,10 +160,14 @@ code {}
 main {
   @apply flex-center flex-col space-y-8 md:space-y-16;
   @apply min-h-full w-full;
-  @apply px-4 py-16;
+  @apply px-4 py-32;
 }
 
 header {
+  @apply w-full fixed top-0;
+  @apply pure-flex flex-row justify-between items-center;
+  @apply px-8 py-4;
+
   z-index: 9999;
 }
 
@@ -225,42 +229,4 @@ table tr, table tr div {
 
 table tr:nth-child(even) {
   /* @apply bg-gray-400; */
-}
-
-
-.squish {
-  animation-name: squish;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-
-@keyframes squish {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  10% {
-    transform: scale(1.1, 0.9);
-  }
-
-  30% {
-    transform: scale(0.9, 1.1);
-  }
-
-  50% {
-    transform: scale(1.05, 0.95);
-  }
-
-  57% {
-    transform: scale(1, 1);
-  }
-
-  64% {
-    transform: scale(1, 1);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
 }
