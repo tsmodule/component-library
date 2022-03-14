@@ -160,9 +160,9 @@ h6, .h6 {
 code {}
 
 main {
-  /* @apply px-0 py-0; */
-  padding: 0 !important;
-  @apply flex-col center expanded filled gap-16;
+  @apply flex-center flex-col space-y-8 md:space-y-16;
+  @apply min-h-full w-full;
+  @apply px-4 py-16;
 }
 
 header {

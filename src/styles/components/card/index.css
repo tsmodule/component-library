@@ -1,9 +1,8 @@
 .card {
-  @apply m-4 p-6 text-left rounded-lg;
+  @apply p-6 text-left rounded-lg;
   text-decoration: none;
   border: 1px solid #eaeaea;
   transition: color 0.15s ease, border-color 0.15s ease;
-  /* max-width: 300px; */
 }
 
 .card:hover,
@@ -11,4 +10,8 @@
 .card:active {
   color: #0070f3;
   border-color: #0070f3;
+}
+
+.card > p {
+  @apply text-gray-700;
 }
