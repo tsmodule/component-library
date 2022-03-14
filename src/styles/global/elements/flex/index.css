@@ -1,0 +1,36 @@
+/**
+ * A container that expands to fill its parent.
+ */
+.expanded {
+  @apply h-full w-full;
+}
+/**
+ * A flex container that is filled by its content.
+ */
+.filled {
+  @apply flex flex-1 items-stretch;
+}
+/**
+ * A pure-flex container will be display: flex.
+ */
+.pure-flex {
+  @apply flex;
+}
+/**
+ * And its immediate children will have zero padding and margin.
+ */
+.pure-flex > * {
+  @apply m-0 p-0;
+}
+/**
+ * A flex container centered along both axes.
+ */
+.flex-center {
+  @apply flex justify-center items-center;
+}
+/**
+ * Center flex and text.
+ */
+.center {
+  @apply flex-center text-center;
+}

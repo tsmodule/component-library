@@ -1,0 +1,13 @@
+table, .table {
+  @apply mx-auto w-full;
+}
+
+table tr, .table tr,
+table tr div, .table tr div {
+  @apply truncate;
+}
+
+table tr:nth-child(even),
+.table tr:nth-child(even) {
+  /* @apply bg-gray-400; */
+}

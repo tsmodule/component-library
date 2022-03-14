@@ -1,0 +1,25 @@
+label, .label {
+  @apply p-4 font-light;
+}
+
+input, .input {
+  @apply border-2 border-gray-300 rounded-lg;
+  @apply p-2;
+}
+
+select, .select {
+  @apply bg-white;
+  @apply border-2 border-gray-300 rounded-lg;
+  @apply p-2;
+}
+
+/* Buttons already signal that the user can interact by touching. */
+button, .button {
+  @apply cursor-pointer;
+  @apply pure-flex flex-center;
+  @apply px-8 py-4;
+  @apply rounded-lg border-2;
+  @apply bg-blue-500 text-white font-bold;
+  
+  text-decoration: none !important;
+}

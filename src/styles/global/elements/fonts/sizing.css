@@ -1,0 +1,58 @@
+/* FONT SIZES */
+@media (min-width: 769px) {
+  html {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 1081px) {
+  html {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1921px) {
+  html {
+    font-size: 2.5em;
+  }
+}
+
+/* HEADINGS */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @apply font-bold display;
+  @apply pb-2 leading-snug;
+}
+
+h1, .h1 {
+  @apply text-4xl;
+}
+
+h2, .h2 {
+  @apply text-2xl;
+}
+
+h3, .h3 {
+  @apply text-xl;
+}
+
+h4, .h4 {
+  @apply text-lg;
+}
+
+h5, .h5 {
+  @apply text-base;
+}
+
+h6, .h6 {
+  @apply text-sm;
+}
+
+p {
+  @apply text-base;
+}

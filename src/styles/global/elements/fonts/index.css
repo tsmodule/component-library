@@ -1,0 +1,20 @@
+@import "./sizing.css";
+
+/* Style your serif font here. */
+.serif {
+  font-family: serif;
+}
+
+/* Style your sans font here. */
+.sans-serif {
+  font-family: sans-serif;
+}
+
+/* Style your display font here. */
+.display {}
+
+/* Style your interface font here. */
+.interface {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

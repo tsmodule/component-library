@@ -1,0 +1,27 @@
+a {
+  @apply underline;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* If the user can hover, transition in by default. */
+@media (hover: hover) {
+  a {
+    transition: 300ms;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+
+  a:hover {
+    text-decoration-color: inherit;
+  }
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #0070f3;
+}
