@@ -1,5 +1,6 @@
 .card {
   @apply p-6 text-left rounded-lg;
+  @apply max-w-[20rem];
   text-decoration: none;
   border: 1px solid #eaeaea;
   transition: color 0.15s ease, border-color 0.15s ease;
