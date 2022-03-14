@@ -5,7 +5,7 @@
 /* purgecss start ignore */
 html, body, #__next {
   @apply m-0 p-0 box-border;
-  @apply min-h-screen;
+  @apply min-h-full;
   @apply w-full h-full;
 }
 
